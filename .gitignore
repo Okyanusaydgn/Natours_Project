@@ -1,0 +1,13 @@
+# .gitignore
+# Log dosyaları
+*.log
+
+# Derleme ve build klasörleri
+dist/
+build/
+
+# .env dosyaları (env dosyaları gizli bilgileri içeriyor olabilir)
+.env
+
+# Node modules klasörü
+node_modules/

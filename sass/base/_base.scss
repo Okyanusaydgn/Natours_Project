@@ -1,0 +1,18 @@
+@use "../abstracts/variables" as vars;
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  //This defines what 1rem is. Normally 1 rem = 16px.
+  font-size: 62.5%; /*10 / 16 = 0.625 = 62.5%*/
+}
+
+body {
+  box-sizing: border-box;
+}

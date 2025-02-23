@@ -38,6 +38,15 @@
     }
   }
 
+  &--green {
+    background-color: vars.$color-primary;
+    color: vars.$color-white;
+
+    &::after {
+      background-color: vars.$color-primary;
+    }
+  }
+
   &::after {
     content: "";
     display: inline-block;

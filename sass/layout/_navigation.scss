@@ -1,4 +1,5 @@
 @use "../abstracts/variables" as vars;
+@use "../abstracts/mixins" as mix;
 
 .navigation {
   &__checkbox {
@@ -17,6 +18,16 @@
     box-shadow: 0 1rem 3rem rgba(vars.$color-black, 0.1);
     text-align: center;
     cursor: pointer;
+
+    @include mix.respond(tab-port) {
+      top: 4rem;
+      right: 4rem;
+    }
+
+    @include mix.respond(phone) {
+      top: 3rem;
+      right: 3rem;
+    }
   }
 
   &__background {
@@ -32,7 +43,16 @@
     );
     z-index: 1000;
     transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
-    // transform: scale(80);
+
+    @include mix.respond(tab-port) {
+      top: 4.5rem;
+      right: 4.5rem;
+    }
+
+    @include mix.respond(phone) {
+      top: 3.5rem;
+      right: 3.5rem;
+    }
   }
 
   &__nav {

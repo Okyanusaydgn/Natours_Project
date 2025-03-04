@@ -1,4 +1,5 @@
 @use "../abstracts/variables" as vars;
+@use "../abstracts/mixins" as mix;
 
 .feature-box {
   background-color: rgba(vars.$color-white, 0.8);
@@ -8,6 +9,10 @@
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(vars.$color-black, 0.15);
   transition: transform 0.3s;
+
+  @include mix.respond(tab-port) {
+    padding: 2rem;
+  }
 
   &__icon {
     font-size: 6rem;
@@ -20,6 +25,10 @@
     );
     -webkit-background-clip: text;
     color: transparent;
+
+    @include mix.respond(tab-port) {
+      margin-bottom: 0;
+    }
   }
 
   &:hover {

@@ -22,6 +22,15 @@
   transform: skewY(-7deg);
   margin-top: -10rem;
 
+  @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 125em) {
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(vars.$color-primary-light, 0.8),
+        rgba(vars.$color-primary-dark, 0.8)
+      ),
+      url(../img/nat-4-small.jpg);
+  }
+
   & > * {
     transform: skewY(7deg);
   }
@@ -74,6 +83,15 @@
   background-size: 100%;
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(vars.$color-black, 0.2);
+
+  @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 125em) {
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(vars.$color-primary-light, 0.8),
+        rgba(vars.$color-primary-dark, 0.8)
+      ),
+      url(../img/nat-10-small.jpg);
+  }
 
   @include mix.respond(tab-land) {
     background-image: linear-gradient(

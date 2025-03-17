@@ -13,6 +13,12 @@
   visibility: hidden;
   transition: all, 0.3;
 
+  @include mix.respond(phone) {
+    max-height: 100vh;
+    display: block;
+    padding: 5vh 0;
+  }
+
   @supports (-webkit-backdrop-filter: blur(10px)) or
     (backdrop-filter: blur(10px)) {
     -webkit-backdrop-filter: blur(10px);
@@ -125,6 +131,11 @@
       display: inline-block;
       transition: all, 0.2s;
       line-height: 1;
+
+      @include mix.respond(phone) {
+        top: 17rem;
+        right: 1.5rem;
+      }
     }
 
     &:hover {

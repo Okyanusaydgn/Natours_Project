@@ -1120,6 +1120,13 @@ body {
   visibility: hidden;
   transition: all, 0.3;
 }
+@media only screen and (max-width: 37.5em) {
+  .popup {
+    max-height: 100vh;
+    display: block;
+    padding: 5vh 0;
+  }
+}
 @supports (-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px)) {
   .popup {
     -webkit-backdrop-filter: blur(10px);
@@ -1224,6 +1231,12 @@ body {
   display: inline-block;
   transition: all, 0.2s;
   line-height: 1;
+}
+@media only screen and (max-width: 37.5em) {
+  .popup__close:link, .popup__close:visited {
+    top: 17rem;
+    right: 1.5rem;
+  }
 }
 .popup__close:hover {
   color: #55c57a;

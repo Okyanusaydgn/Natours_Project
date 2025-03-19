@@ -3,6 +3,7 @@
 
 .composition {
   position: relative;
+
   &__photo {
     width: 55%;
     box-shadow: 0 1.5rem 4rem rgba(vars.$color-black, 0.4);
@@ -31,7 +32,7 @@
 
     &--p2 {
       right: 0;
-      top: -2rem;
+      top: 2rem;
 
       @include mix.respond(tab-port) {
         top: -1rem;
@@ -62,5 +63,5 @@
   &:hover &__photo:not(:hover) {
     transform: scale(0.95);
   }
-  // composition:hover composition__photo:not(:hover){}
+  //composition:hover composition__photo:not(:hover) {
 }

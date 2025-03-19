@@ -1,5 +1,6 @@
 @use "../abstracts/variables" as vars;
 @use "../abstracts/mixins" as mix;
+
 .story {
   width: 75%;
   margin: 0 auto;
@@ -30,7 +31,7 @@
     overflow: hidden;
     border-radius: 50%;
 
-    @supports (clip-path: polygon(0 0)) or (clip-path: polygon(0 0)) {
+    @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
       -webkit-clip-path: circle(50% at 50% 50%);
       clip-path: circle(50% at 50% 50%);
       -webkit-shape-outside: circle(50% at 50% 50%);
@@ -45,9 +46,9 @@
 
   &__img {
     height: 100%;
-    transform: translate(-4rem) scale(1.4);
+    transform: translateX(-4rem) scale(1.4);
     backface-visibility: hidden;
-    transition: all, 0.5s;
+    transition: all 0.5s;
   }
 
   &__text {
@@ -68,7 +69,7 @@
     font-size: 1.7rem;
     text-align: center;
     opacity: 0;
-    transition: all, 0.5s;
+    transition: all 0.5s;
     backface-visibility: hidden;
   }
 
@@ -78,7 +79,7 @@
   }
 
   &:hover &__img {
-    transform: translate(-4rem) scale(1);
+    transform: translateX(-4rem) scale(1);
     filter: blur(3px) brightness(80%);
   }
 }

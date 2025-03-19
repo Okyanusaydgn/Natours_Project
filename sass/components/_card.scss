@@ -1,5 +1,6 @@
 @use "../abstracts/variables" as vars;
 @use "../abstracts/mixins" as mix;
+
 .card {
   // FUNCTIONALITY
   perspective: 150rem;
@@ -62,7 +63,6 @@
   }
 
   // FRONT SIDE STYLING
-
   &__picture {
     background-size: cover;
     height: 23rem;
@@ -79,16 +79,6 @@
           vars.$color-secondary-dark
         ),
         url(../img/nat-5.jpg);
-
-      @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
-        only screen and (min-width: 125em) {
-        background-image: linear-gradient(
-            to right bottom,
-            vars.$color-secondary-light,
-            vars.$color-secondary-dark
-          ),
-          url(../img/nat-5-small.jpg);
-      }
     }
 
     &--2 {
@@ -98,16 +88,6 @@
           vars.$color-primary-dark
         ),
         url(../img/nat-6.jpg);
-
-      @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
-        only screen and (min-width: 125em) {
-        background-image: linear-gradient(
-            to right bottom,
-            vars.$color-primary-light,
-            vars.$color-primary-dark
-          ),
-          url(../img/nat-6-small.jpg);
-      }
     }
 
     &--3 {
@@ -117,16 +97,6 @@
           vars.$color-tertiary-dark
         ),
         url(../img/nat-7.jpg);
-
-      @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
-        only screen and (min-width: 125em) {
-        background-image: linear-gradient(
-            to right bottom,
-            vars.$color-tertiary-light,
-            vars.$color-tertiary-dark
-          ),
-          url(../img/nat-7-small.jpg);
-      }
     }
   }
 
@@ -144,8 +114,8 @@
 
   &__heading-span {
     padding: 1rem 1.5rem;
-    box-decoration-break: clone;
     -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
 
     &--1 {
       background-image: linear-gradient(
@@ -174,6 +144,7 @@
 
   &__details {
     padding: 3rem;
+
     ul {
       list-style: none;
       width: 80%;
@@ -191,8 +162,7 @@
     }
   }
 
-  // BACK SIDE STYLING
-
+  // FRONT SIDE STYLING
   &__cta {
     position: absolute;
     top: 50%;
@@ -218,7 +188,7 @@
     font-weight: 100;
   }
 
-  //@include mix.respond(tab-port)
+  //@include respond(tab-port) {
   @media only screen and (max-width: 56.25em), only screen and (hover: none) {
     height: auto;
     border-radius: 3px;
@@ -245,10 +215,9 @@
     }
 
     // FRONT SIDE STYLING
-
     &__cta {
       position: relative;
-      top: 0;
+      top: 0%;
       left: 0;
       transform: translate(0);
       width: 100%;

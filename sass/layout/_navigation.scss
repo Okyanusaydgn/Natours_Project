@@ -57,7 +57,6 @@
 
   &__nav {
     height: 100vh;
-
     position: fixed;
     top: 0;
     left: 0;
@@ -99,7 +98,7 @@
         vars.$color-white 50%
       );
       background-size: 220%;
-      transition: all, 0.4s;
+      transition: all 0.4s;
 
       span {
         margin-right: 1.5rem;
@@ -116,7 +115,6 @@
   }
 
   //FUNCTIONALITY
-
   &__checkbox:checked ~ &__background {
     transform: scale(80);
   }
@@ -130,6 +128,7 @@
   &__icon {
     position: relative;
     margin-top: 3.5rem;
+
     &,
     &::before,
     &::after {
@@ -150,7 +149,6 @@
     &::before {
       top: -0.8rem;
     }
-
     &::after {
       top: 0.8rem;
     }

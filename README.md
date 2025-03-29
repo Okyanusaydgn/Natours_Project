@@ -3,9 +3,12 @@
 
 # Natours Project
 
+<img src="img/Animation.gif" alt="Omnifood Demo GIF" width="600px">
+
+> This GIF demonstrates the main features of the Omnifood website.
+
+<br>
 **Natours** is a modern, adventure-themed website for nature lovers and travelers 🏕️. Fully responsive design built with **HTML, CSS, and SASS** ✨. Explore breathtaking tours and embrace the wild! 🌿🚀
-
-
 
 ## 📌 About the Project
 

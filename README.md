@@ -17,6 +17,21 @@ Natours is a web application designed for adventurers and nature enthusiasts. It
 - **Code Editor**: Visual Studio Code
 - **Deployment**: Netlify
 
+## 🔧 Tools and Resources
+
+Here are the tools and resources used during the development of this project:
+
+### Fonts and Typography
+- **🌐 Google Fonts**: For modern and readable typography.
+
+### Colors and Design Tools
+- **🎨 Tint and Shade Generator**: For creating consistent color palettes.
+- **🌈 Coolors Contrast Checker**: To ensure accessibility and readability.
+- **🎨 Open Color**: For a well-balanced color scheme.
+
+### Images and Videos
+- **📷 Unsplash**: For high-quality, royalty-free images.
+
 ## 🎨 Icons and Design Resources
 
 - **🌐 Icomoon**: [Visit Icomoon](https://icomoon.io) for scalable and customizable icons.

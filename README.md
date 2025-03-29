@@ -5,6 +5,8 @@
 
 **Natours** is a modern, adventure-themed website for nature lovers and travelers 🏕️. Fully responsive design built with **HTML, CSS, and SASS** ✨. Explore breathtaking tours and embrace the wild! 🌿🚀
 
+
+
 ## 📌 About the Project
 
 Natours is a web application designed for adventurers and nature enthusiasts. It features a clean, modern, and fully responsive design, ensuring a seamless experience across all devices.
@@ -33,7 +35,7 @@ You can find the source code for this project on GitHub:
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/yourusername/natours-project.git
+   git clone https://github.com/Okyanusaydgn/Natours_Project.git
    ```
 2. **Navigate to the project folder**:
    ```bash
@@ -43,9 +45,13 @@ You can find the source code for this project on GitHub:
    ```bash
    code .
    ```
-4. **Start a local server** (Optional, if needed):
+4. **Install dependencies (if you haven't already):
    ```bash
-   npx live-server
+   npm install
+   ```
+5. **Start a local server** (Optional, if needed):
+   ```bash
+   npm start
    ```
 
 Enjoy your adventure with Natours! 🌍✨
